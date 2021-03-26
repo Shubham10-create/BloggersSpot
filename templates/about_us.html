@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!--this is jinja2 syntax-->
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+
+{% block body %}
+
+<br>
+<h1 style="text-align: center">About Me</h1>
+<hr>
+<br>
+
+<div class="col d-flex justify-content-center">
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/static/css/Shubham.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">Hello, I'm Shubham Hedavkar from Mumbai,Maharashtra. I am currently a third year computer undergraduate student who is more actively interested towards python development, Machine Learning, Data Science and Analytics.
+           <br> You people can connect with me through <a target = "_blank" href="https://www.linkedin.com/in/shubham-hedavkar-4b496b1b5/">LinkedIn</a> or through <a target = "_blank" href="https://www.instagram.com/shubham15001/">Instagram</a></p>
+    </div> 
+</div>
+</div>
+
+{% endblock %}
+<!--The above code actually inherits from our base-->

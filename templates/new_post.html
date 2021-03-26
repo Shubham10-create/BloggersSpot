@@ -1,0 +1,27 @@
+{% extends 'base.html' %} <!--this is jinja2 syntax,this is plugged in from base.html-->
+
+{% block head %} 
+<title>New Post</title>
+{% endblock %}
+
+{% block body %} 
+<h1>New Post</h1>
+
+<hr>
+<h2>Create New Post:</h2>
+<form action="/posts" method='POST'> <!--whatever is written here when we hit submit button that is going to get sent to a database-->
+    <label for="title">Title:</label>  <!--for=title is linking title to the next line name-->
+    <input class="form-control" type="text" name='title' id='title' placeholder="Enter Title..." aria-label="Enter Title">
+    <br>
+    <label for="author">Author:</label>
+    <input class="form-control" type="text" name='author' id='title' placeholder="Enter Author..." aria-label="Enter Author">
+    <br>
+    <label for="content">Post:</label>
+    <textarea class="form-control" name="content" id="content" placeholder="Post Something..." aria-label="Post Something..." rows="3"></textarea>
+    <br>
+    <input type='submit' class="btn btn-success" value='Post'>
+</form>
+<hr>
+
+   
+{% endblock %}

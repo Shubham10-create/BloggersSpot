@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!--this is jinja2 syntax-->
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+
+{% block body %}
+
+<br>
+<h1>Home Page</h1>
+<hr>
+<br>
+<main class="back" role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome To My Bloging Website, Here we will be sharing about everything related to Computer Science, Machine Learning,Artificial Intelligence, Data Science, Software Engineering, Web Development, Life Sciences and many more...</p>
+            <p>You'll can communicate we me or can be intouch with me through my social media handle <a href="https://www.linkedin.com/in/shubham-hedavkar-4b496b1b5/">LinkedIn.</a></p>
+            <p>This website is built using Python's Flask WebFramework along with html and css for the frontend styling part</p>
+            <p>
+                <a class="btn btn-primary" href="/posts" role="button">Visit BlogPost &raquo;</a>
+            </p>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+<!--The above code actually inherits from our base-->
